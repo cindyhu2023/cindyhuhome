@@ -7,7 +7,7 @@ body {
 
 .background {
   /*background-image: url('images/background_site.jpg') no-repeat center center fixed;*/
-  background-image: url('../public/image/background_site.jpg');
+  background-image: url('../public/image/background_site.JPG');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
