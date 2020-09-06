@@ -1,0 +1,136 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+ background-color: rgb(39,35,34);
+  margin-bottom: 0;
+}
+
+.background {
+  background: url("images/background_site.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content {
+  backdrop-filter: blur(4px);
+  padding-top: 80px;
+}
+
+h2{
+  font-weight: lighter;
+}
+h3{
+  font-weight: lighter;
+}
+
+.intro span{
+  text-decoration: underline;
+  text-decoration-color: #ffa299;
+}
+
+img {
+  margin-bottom: 20px;
+  width: 15%;
+}
+
+.contact-button{
+  margin-top: 30px;
+}
+
+.btn {
+  border-radius: 12px;
+  margin-left: 10px;
+}
+
+.social-media {
+  margin-top: 30px;
+}
+
+.coming-soon {
+  margin-top: 115px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.social-media i{
+  color: #ddd;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+hr {
+ width: 75%;
+ border-color: white;
+ border-width: 1px;
+ padding-top: 15px;
+ padding-bottom: 20px;
+ margin-bottom: 0;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  font-size: 8px;
+  color: #666;
+}
+
+/*animation*/
+.rotatingText-adjective {
+  left: 0;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  opacity: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.rotatingText-adjective:nth-of-type(1) {
+  animation-name: rotate;
+  animation-duration: 7s;
+  animation-delay: 0s;
+}
+
+.rotatingText-adjective:nth-of-type(2) {
+  animation-name: rotate;
+  animation-duration: 7s;
+  animation-delay: 7s;
+}
+
+.rotatingText-adjective:nth-of-type(3) {
+  animation-name: rotate-last;
+  animation-duration: 2s;
+  animation-delay: 14s;
+  animation-fill-mode: forwards;
+}
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+
+  5%, 95% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+}
+
+@keyframes rotate-last {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+
+  30%, 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
