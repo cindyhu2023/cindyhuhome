@@ -6,7 +6,8 @@ body {
 }
 
 .background {
-  background: url('https://drive.google.com/file/d/1YPn1S8wPSv-Xb143Vgss_CfTPofODwBo/view?usp=sharing') no-repeat center center fixed;
+  /*background-image: url('images/background_site.jpg') no-repeat center center fixed;*/
+  background-image: url('../images/background_site.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
