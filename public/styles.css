@@ -7,7 +7,7 @@ body {
 
 .background {
   /*background-image: url('images/background_site.jpg') no-repeat center center fixed;*/
-  background-image: url('../public/image/background_site.JPG');
+  background-image: url('https://res.cloudinary.com/hw9duemvk/image/upload/v1599442026/background_site_k3evpc.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
