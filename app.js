@@ -1,8 +1,12 @@
 const express = require("express");
+const cloudinary = require('cloudinary');
 
 const app = express();
 
 app.use(express.static("public"));
+
+cloudinary.uploader.upload("../public/image/background_site.JPG",
+function(result) { console.log(result) })
 
 app.get("/", function(req, res){
   res.sendFile(__dirname + "/index.html");
