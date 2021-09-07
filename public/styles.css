@@ -20,12 +20,93 @@ body {
   padding-top: 60px;
 }
 
+h1{
+  color:#ddd;
+}
+
 h2{
   font-weight: lighter;
 }
 h3{
   font-weight: lighter;
 }
+
+/* testing background slide show */
+
+body {
+  margin: 0;
+}
+
+.img-container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.img-container img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  position: absolute;
+  top: -30;
+  width: 100%;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+.img-container img.next {
+  opacity: 1;
+  z-index: 1;
+}
+
+.img-container img.prev {
+  opacity: 1;
+  z-index: 2;
+}
+
+.img-container img.fade-out {
+  opacity: 0;
+  transition: visibility 0s .5s, opacity .5s linear;
+  visibility: hidden;
+}
+
+.img-container div.bg-filter-wrap {
+  position: relative;
+  background: rgba(3, 52, 116, 0.3);
+  /* background-color: black; */
+  /* opacity: 0.3; */
+  width: 100%;
+  height:100%;
+  z-index: 5;
+}
+
+.intro-div {
+  position: relative;
+  padding-top: 15%;
+  color: rgb(250, 250, 250);
+  opacity: 1;
+  z-index: 6;
+}
+
+.greetings {
+  text-decoration: underline;
+  text-decoration-color: #ffa299;
+}
+
+.intro-div h1{
+  font-weight: 500;
+  font-size: 65px;
+  opacity: 1;
+}
+
+/* img4 1 */
+
+
+
+/* original css */
 
 .intro span{
   text-decoration: underline;
