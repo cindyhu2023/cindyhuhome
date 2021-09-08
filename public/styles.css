@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
  background-color: floralwhite;
   margin-bottom: 0;
@@ -20,9 +20,9 @@ body {
   padding-top: 60px;
 }
 
-/* h1{
-  color:#ddd;
-} */
+h1{
+  font-family: 'Raleway', sans-serif;
+}
 
 h2{
   font-weight: lighter;
@@ -75,7 +75,9 @@ body {
 
 .img-container div.bg-filter-wrap {
   position: relative;
-  background: rgba(2, 39, 87, 0.4);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  /* background: radial-gradient(rgba(1, 22, 49, 0.3), rgba(1, 22, 49, 0.7)); */
+  /* background: rgba(2, 39, 87, 0.4); */
   /* background-color: black; */
   /* opacity: 0.3; */
   width: 100%;
@@ -102,10 +104,24 @@ body {
   opacity: 1;
 }
 
+.intro-div a {
+  margin-top: 15px;
+}
+
 nav {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  /* text-decoration: underline; */
+}
+
+.contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.contact p {
+  font-size: 1.5rem;
 }
 
 /* img4 1 */
@@ -119,10 +135,11 @@ nav {
   text-decoration-color: #ffa299;
 }
 
-img {
+/* img {
   margin-bottom: 20px;
-  height: 200px;
-}
+  height: 350px;
+  border-radius: 50%;
+} */
 
 .contact-button{
   margin-top: 30px;
@@ -144,17 +161,17 @@ img {
 }
 
 .social-media i{
-  color: #ddd;
-  font-size: 20px;
-  margin-left: 10px;
+  color: #17a2b8;
+  font-size: 3rem;
+  margin-left: 20px;
 }
 
 .top-line {
-  margin-top: 0;
+  margin-top: 0px;
   width: 75%;
   border-color: white;
   border-width: 1px;
-  padding-top: 15px;
+  padding-top: 0px;
   padding-bottom: 10px;
   margin-bottom: 0;
 }
@@ -247,13 +264,15 @@ img {
 }
 
 .about {
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 150px;
 }
 
 .profile-pic {
-  width: 100%;
-  padding-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 350px;
+  border-radius: 50%;
 }
 
 .about-text {
