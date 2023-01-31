@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "cloudinary": ""
+    "cloudinary": "",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
