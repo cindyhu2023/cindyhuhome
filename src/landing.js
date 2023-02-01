@@ -1,20 +1,22 @@
 import './styles.css';
-import img1 from './image/img1.jpg';
-import img2 from './image/img2.jpg';
-import img3 from './image/img3.jpg';
-import img4 from './image/img4.jpg';
-import img5 from './image/img5.jpg';
+// import img1 from '/image/img1.jpg';
+// import img2 from '/image/img2.jpg';
+// import img3 from '/image/img3.jpg';
+// import img4 from '/image/img4.jpg';
+// import img5 from '/image/img5.jpg';
 // import $ from 'jquery';
 import TypeWriterEffect from 'react-typewriter-effect';
+
+// let path = process.env.PUBLIC_URL + '/image/';
 
   function Landing() {
       return (
         <div className="img-container" data-slideshow id="intro">
-        <img src={img1} alt="bg1"/>
+        {/* <img src={path + 'img1.jpg'} alt="bg1"/>
         <img src={img2} alt="bg1"/>
         <img src={img3} alt="bg1"/>
         <img src={img4} alt="bg1"/>
-        <img src={img5} alt="bg1"/>
+        <img src={img5} alt="bg1"/> */}
         <div className="bg-filter-wrap">
             <nav className="navbar navbar-expand-sm navbar-dark nav-pills">
                 <a className="navbar-brand" href="#intro">CH.</a>
