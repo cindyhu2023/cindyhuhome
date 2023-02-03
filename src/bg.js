@@ -1,4 +1,6 @@
-class Slideshow {
+import $ from 'jquery';
+
+export default class Slideshow {
 
   constructor() {
     this.initSlides();
@@ -61,8 +63,5 @@ class Slideshow {
 
 }
 
-$(document).ready(function() {
-  new Slideshow();
-});
-  
+
   
