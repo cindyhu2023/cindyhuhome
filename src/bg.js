@@ -63,5 +63,9 @@ export default class Slideshow {
 
 }
 
+$(document).ready(function() {
+  new Slideshow();
+});
+
 
   

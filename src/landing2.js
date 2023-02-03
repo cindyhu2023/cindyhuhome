@@ -1,18 +1,25 @@
 import './styles.css';
 import NavBar from './navbar';
 import TypeWriterEffect from 'react-typewriter-effect';
-import './bg'
+import BackgroundSlider from 'react-background-slider'
 
 let path = process.env.PUBLIC_URL + '/image/';
+let img1 = path + 'img1.jpg';
+let img2 = path + 'img2.jpg';
 
-  function Landing() {
+  function Landing2() {
       return (
         <div className="img-container" data-slideshow id="intro">
-        <img src={path + 'img1.jpg'} alt="bg1"/>
+            <BackgroundSlider
+        images={[img1, img2]}
+        duration={3}
+        transition={2}
+        />
+        {/* <img src={path + 'img1.jpg'} alt="bg1"/>
         <img src={path + 'img2.jpg'} alt="bg1"/>
         <img src={path + 'img3.jpg'} alt="bg1"/>
         <img src={path + 'img4.jpg'} alt="bg1"/>
-        <img src={path + 'img5.jpg'} alt="bg1"/>
+        <img src={path + 'img5.jpg'} alt="bg1"/> */}
         <div className="bg-filter-wrap">
             <NavBar/>
             <div className="intro-div">
@@ -55,4 +62,4 @@ let path = process.env.PUBLIC_URL + '/image/';
       );
   }
 
-  export default Landing;
+  export default Landing2;

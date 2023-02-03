@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import $ from 'jquery';
-import Slideshow from './bg'
+// import $ from 'jquery';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,9 +12,6 @@ root.render(
   </React.StrictMode>
 );
 
-$(document).ready(function() {
-  new Slideshow();
-});
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
