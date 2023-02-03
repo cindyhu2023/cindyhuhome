@@ -54,7 +54,7 @@ let path = process.env.PUBLIC_URL + '/image/';
             />
                 <h1 className="underline-decor"><span className="txt-rotate" data-period="2000" data-rotate='[ "Hello!", "哈囉！", "Hey there!", "你好！", "Welcome!", "歡迎！" ]'></span>
                 </h1>
-                <h1>I'm Cindy Hu.</h1>
+                <h1>I'm Cindy Hu. 1</h1>
                 <div className="d-flex justify-content-center mx-auto">
                     <a className="btn btn-outline-light btn-lg" href="#about">About Me</a>
                     <a className="btn btn-outline-light btn-lg" href="#contact">Contact</a>
